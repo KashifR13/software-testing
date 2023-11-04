@@ -13,16 +13,16 @@ describe('ceil', () => {
     });
     
     it('should handle non-number inputs and throw an error', () => {
-        expect(ceil('hello')).toEqual(NaN);
-        expect(ceil(true)).toEqual(1);
-        expect(ceil(false)).toEqual(0);
-        expect(ceil(undefined)).toEqual(NaN);
-        expect(ceil(null)).toEqual(0);
-        expect(ceil({})).toEqual(NaN);
-        expect(ceil(Object(1))).toEqual(1);
+        expect(ceil('hello')).toEqual(NaN); // Differs from test plan
+        expect(ceil(true)).toEqual(1); // Differs from test plan
+        expect(ceil(false)).toEqual(0); // Differs from test plan
+        expect(ceil(undefined)).toEqual(NaN); // Differs from test plan
+        expect(ceil(null)).toEqual(0); // Differs from test plan
+        expect(ceil({})).toEqual(NaN); // Differs from test plan
+        expect(ceil(Object(1))).toEqual(1); // Differs from test plan
         expect(() => ceil(Symbol())).toThrow();
         expect(() => ceil(Symbol(1))).toThrow();
-        expect(ceil([])).toEqual(0);
-        expect(ceil(['1', '2'])).toEqual(NaN);
+        expect(ceil([])).toEqual(0); // Differs from test plan
+        expect(ceil(['1', '2'])).toEqual(NaN); // Differs from test plan
     });
 });

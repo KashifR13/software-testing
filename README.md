@@ -1,5 +1,8 @@
 # Student template
 
+# Jest automation tests 
+[![Run Jest Tests](https://github.com/KashifR13/software-testing/actions/workflows/jest.yml/badge.svg)](https://github.com/KashifR13/software-testing/actions/workflows/jest.yml)
+
 ## Purpose of this repository
 
 This is a project template for students participating in the Software Testing course

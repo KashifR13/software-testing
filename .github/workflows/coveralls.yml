@@ -19,7 +19,7 @@ jobs:
     - name: npm install, jest --coverage && coveralls < coverage/lcov.info
       run: |
         npm install
-        make test-coverage
+        jest --coverage && coveralls < coverage/lcov.info
 
     - name: Coveralls
       uses: coverallsapp/github-action@v2
